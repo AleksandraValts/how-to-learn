@@ -54,7 +54,7 @@
   margin: 0;
 }
 
-.subtitle__link {
+.header__link {
   text-decoration: none;
   color: #2f80ed;
 }
@@ -91,14 +91,11 @@
   display: flex;
   justify-content: space-between;
   margin: 100px 0 100px 0;
-  margin-bottom: 100px;
   width: 80%;
 }
 
 .two-columns__span-accent {
   font-weight: 600;
-  margin-top: 30px;
-  margin-bottom: 30px;
   line-height: 34px;
   font-size: 24px;
 }
@@ -124,6 +121,12 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.two-columns__paragraph:last-child {
+  margin-bottom: 0;
 }
 
 /* начало блока digits */
@@ -137,6 +140,7 @@
 
 .section-title {
   width: 60%;
+  margin: 0;
   margin-bottom: 20px;
   text-align: center;
   line-height: 1.15;
@@ -192,7 +196,7 @@
   position: relative;
   align-items: center;
   background-color: #f2f2f2;
-  height: 890px;
+  min-height: 890px;
 }
 
 .feynman__main-illustration {
@@ -211,7 +215,7 @@
   font-size: 120px;
   font-weight: 600;
   width: 648px;
-  margin-bottom: 70px;
+  margin: 100px 0 70px 0;
 }
 
 .feynman__subtitle {
@@ -229,6 +233,11 @@
   position: absolute;
   right: 48px;
   top: 50%;
+  z-index: 2;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  margin: 0;
 }
 
 /* начало блока kaufman */
@@ -242,12 +251,14 @@
   background-color: #1f1f1f;
 }
 
-.kaufman_triangle {
+.kaufman__triangle {
   position: absolute;
   right: -210px;
   z-index: 1;
   height: 877px;
   width: 877px;
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: contain;
 }
 
 .section-title_theme_dark {
@@ -299,7 +310,9 @@
 }
 
 .footer__column_content_copyright {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   flex-basis: 711px;
   margin: 0;
 }
@@ -311,14 +324,11 @@
 }
 
 .footer__author {
-  bottom: 18px;
-  left: 0;
-  position: absolute;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
   color: white;
-  margin: 0;
+  margin: 18px 0 18px 0;
 }
 
 .footer__column-heading {
@@ -356,5 +366,6 @@
 .footer__social-icon {
   width: 16px;
   height: 16px;
+  margin-right: 10px;
 }
 

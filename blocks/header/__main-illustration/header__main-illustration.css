@@ -6,4 +6,5 @@
     width: 765px;
     z-index: 2;
     margin: 0;
+    object-fit: cover;
   }
